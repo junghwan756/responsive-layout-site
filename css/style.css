@@ -1,0 +1,257 @@
+
+/* font-family: 'Inter', sans-serif; */
+
+
+
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(244, 244, 244, 0.7);
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 95%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name,
+.main-nav a {
+    display: block;
+    text-align: center;
+    padding: 0.6em 1em;
+    margin-bottom: 0.5em;
+    color: rgb(53, 50, 50);
+}
+
+.name {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7em;
+    margin-top: 0;
+}
+
+.main-nav a {
+    background-color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(53, 50, 50);
+}
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+    padding: 1em;
+}
+
+.bio {
+    color: rgb(112, 112, 112);
+    text-align: center;
+}
+
+.portfolio {
+    text-align: center;
+    margin: 1.8em 0 2.5em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.row {
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.col {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+.content {
+    font-size: 0.9em;
+   
+    margin: 1em 1em 2em;
+}
+
+.contact {
+    color: black;
+    text-align: center;
+    
+}
+
+.contactTitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    margin: 2.7em 2.7em 1.5em;
+}
+
+.main-footer {
+    color: rgb(53, 50, 50);
+}
+
+.phone {
+    margin-top: 1.5em;
+}
+
+.email {
+    margin-bottom: 2.5em;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid rgba(53, 50, 50, .1);
+    padding: 1.5em 0;
+    margin: 0 1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.footer-item1 .footer-item2 {
+    margin: 0;
+
+}
+
+.footer-item1 {
+    margin-right: auto;
+}
+
+/* ---- Page Elements ---- */
+
+.profileImage {
+    width: 70%;
+    margin-top: 2em; 
+}
+
+.footer-item3,
+.footer-item4,
+.footer-item5  {
+    display: none;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+    .main-header {
+        margin-bottom: 3em;
+    }
+
+    .main-nav, .bio {
+        display: flex;
+    }
+
+    .main-nav {
+    justify-content: center;
+    }
+
+    .bio {
+        flex-direction: row-reverse;
+    }
+
+    .profileIntro {
+        text-align: left;
+        margin-top: 1.5em;
+        margin-right: 1.5em;
+        font-size: 1.25em;
+    }
+
+    .profileImage {
+        width: 41%;
+    }
+
+    .main-nav a {
+        background-color: rgba(244, 244, 244, 0);
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio {
+        flex-basis: 100%;
+    }
+
+    .col {
+        flex-basis: 50%;
+    }
+
+    .content {
+        font-size: 1em;
+    }
+
+    .invitation {
+        font-size: 1.1em;
+        margin: 0 8em;
+    }
+
+    .footer-item2 {
+        display: none;
+    }
+
+    .footer-item3,
+    .footer-item4,
+    .footer-item5  {
+        display: inline;
+    }
+
+    .footer-item3,
+    .footer-item4 {
+        margin-right: 2em;
+    }
+}   
+
+@media (min-width: 1024px) {
+    body {
+        margin: 2em;
+    }
+
+    .big-screen-header {
+        display: flex;
+    }
+
+    .name {
+        margin-right: auto;
+        padding-left: 0;
+    }
+
+    .main-nav {
+        margin-top: 1em;     
+    }
+
+    .row {
+        justify-content: space-between;
+    }
+
+    .col {
+        flex: 1 30%;
+    }
+
+    .contact {
+        font-size: 1.2em;
+    }
+}
+
